@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>This is homepage</h1>
+    <h1>This is an home page</h1>
     <!-- <GridSystem /> -->
     <!-- <MarginPadding /> -->
     <DisplayClass />
