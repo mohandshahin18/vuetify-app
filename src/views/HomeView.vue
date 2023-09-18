@@ -2,19 +2,21 @@
   <div class="home">
     <h1>This is homepage</h1>
     <!-- <GridSystem /> -->
-    <MarginPadding />
+    <!-- <MarginPadding /> -->
+    <DisplayClass />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 // import GridSystem from "@/components/GridSystem.vue";
-import MarginPadding from "@/components/MarginPadding.vue";
+// import MarginPadding from "@/components/MarginPadding.vue";
+import DisplayClass from "@/components/DisplayClass.vue";
 export default {
   name: "HomeView",
   components: {
     // GridSystem,
-    MarginPadding,
+    // MarginPadding,
+    DisplayClass,
   },
 };
 </script>
