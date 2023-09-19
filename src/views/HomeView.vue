@@ -5,7 +5,8 @@
     <!-- <MarginPadding /> -->
     <!-- <DisplayClass /> -->
     <!-- <ButtonIcon /> -->
-    <CardsVuetify />
+    <!-- <CardsVuetify /> -->
+    <ExpansionPanel />
   </div>
 </template>
 
@@ -14,7 +15,8 @@
 // import MarginPadding from "@/components/MarginPadding.vue";
 // import DisplayClass from "@/components/DisplayClass.vue";
 // import ButtonIcon from "@/components/ButtonIcon.vue";
-import CardsVuetify from "@/components/CardsVuetify.vue";
+// import CardsVuetify from "@/components/CardsVuetify.vue";
+import ExpansionPanel from "@/components/ExpansionPanel.vue";
 export default {
   name: "HomeView",
   components: {
@@ -22,7 +24,8 @@ export default {
     // MarginPadding,
     // DisplayClass,
     // ButtonIcon,
-    CardsVuetify,
+    // CardsVuetify,
+    ExpansionPanel,
   },
 };
 </script>
