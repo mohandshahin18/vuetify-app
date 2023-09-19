@@ -4,7 +4,8 @@
     <!-- <GridSystem /> -->
     <!-- <MarginPadding /> -->
     <!-- <DisplayClass /> -->
-    <ButtonIcon />
+    <!-- <ButtonIcon /> -->
+    <CardsVuetify />
   </div>
 </template>
 
@@ -12,14 +13,16 @@
 // import GridSystem from "@/components/GridSystem.vue";
 // import MarginPadding from "@/components/MarginPadding.vue";
 // import DisplayClass from "@/components/DisplayClass.vue";
-import ButtonIcon from "@/components/ButtonIcon.vue";
+// import ButtonIcon from "@/components/ButtonIcon.vue";
+import CardsVuetify from "@/components/CardsVuetify.vue";
 export default {
   name: "HomeView",
   components: {
     // GridSystem,
     // MarginPadding,
     // DisplayClass,
-    ButtonIcon,
+    // ButtonIcon,
+    CardsVuetify,
   },
 };
 </script>
