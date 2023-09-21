@@ -6,7 +6,8 @@
     <!-- <DisplayClass /> -->
     <!-- <ButtonIcon /> -->
     <!-- <CardsVuetify /> -->
-    <ExpansionPanel />
+    <!-- <ExpansionPanel /> -->
+    <DialogVuetify />
   </div>
 </template>
 
@@ -16,7 +17,8 @@
 // import DisplayClass from "@/components/DisplayClass.vue";
 // import ButtonIcon from "@/components/ButtonIcon.vue";
 // import CardsVuetify from "@/components/CardsVuetify.vue";
-import ExpansionPanel from "@/components/ExpansionPanel.vue";
+// import ExpansionPanel from "@/components/ExpansionPanel.vue";
+import DialogVuetify from "@/components/DialogVuetify.vue";
 export default {
   name: "HomeView",
   components: {
@@ -25,7 +27,8 @@ export default {
     // DisplayClass,
     // ButtonIcon,
     // CardsVuetify,
-    ExpansionPanel,
+    // ExpansionPanel,
+    DialogVuetify,
   },
 };
 </script>
