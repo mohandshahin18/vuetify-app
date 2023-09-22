@@ -8,7 +8,8 @@
     <!-- <CardsVuetify /> -->
     <!-- <ExpansionPanel /> -->
     <!-- <DialogVuetify /> -->
-    <ListItems />
+    <!-- <ListItems /> -->
+    <SheetMenu />
   </div>
 </template>
 
@@ -20,7 +21,8 @@
 // import CardsVuetify from "@/components/CardsVuetify.vue";
 // import ExpansionPanel from "@/components/ExpansionPanel.vue";
 // import DialogVuetify from "@/components/DialogVuetify.vue";
-import ListItems from "@/components/ListItems.vue";
+// import ListItems from "@/components/ListItems.vue";
+import SheetMenu from "@/components/SheetMenu.vue";
 export default {
   name: "HomeView",
   components: {
@@ -31,7 +33,8 @@ export default {
     // CardsVuetify,
     // ExpansionPanel,
     // DialogVuetify,
-    ListItems,
+    // ListItems,
+    SheetMenu,
   },
 };
 </script>
