@@ -9,7 +9,8 @@
     <!-- <ExpansionPanel /> -->
     <!-- <DialogVuetify /> -->
     <!-- <ListItems /> -->
-    <SheetMenu />
+    <!-- <SheetMenu /> -->
+    <ToolBar />
   </div>
 </template>
 
@@ -22,7 +23,8 @@
 // import ExpansionPanel from "@/components/ExpansionPanel.vue";
 // import DialogVuetify from "@/components/DialogVuetify.vue";
 // import ListItems from "@/components/ListItems.vue";
-import SheetMenu from "@/components/SheetMenu.vue";
+// import SheetMenu from "@/components/SheetMenu.vue";
+import ToolBar from "@/components/ToolBar.vue";
 export default {
   name: "HomeView",
   components: {
@@ -34,7 +36,8 @@ export default {
     // ExpansionPanel,
     // DialogVuetify,
     // ListItems,
-    SheetMenu,
+    // SheetMenu,
+    ToolBar,
   },
 };
 </script>
