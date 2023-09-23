@@ -10,7 +10,8 @@
     <!-- <DialogVuetify /> -->
     <!-- <ListItems /> -->
     <!-- <SheetMenu /> -->
-    <ToolBar />
+    <!-- <ToolBar /> -->
+    <AppBar />
   </div>
 </template>
 
@@ -24,7 +25,8 @@
 // import DialogVuetify from "@/components/DialogVuetify.vue";
 // import ListItems from "@/components/ListItems.vue";
 // import SheetMenu from "@/components/SheetMenu.vue";
-import ToolBar from "@/components/ToolBar.vue";
+// import ToolBar from "@/components/ToolBar.vue";
+import AppBar from "@/components/AppBar.vue";
 export default {
   name: "HomeView",
   components: {
@@ -37,7 +39,8 @@ export default {
     // DialogVuetify,
     // ListItems,
     // SheetMenu,
-    ToolBar,
+    // ToolBar,
+    AppBar,
   },
 };
 </script>
