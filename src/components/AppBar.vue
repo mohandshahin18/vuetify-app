@@ -7,8 +7,12 @@
       <v-icon class="mr-4">mdi-heart</v-icon>
       <v-icon>mdi-dots-vertical</v-icon>
     </v-app-bar>
-
-    <v-bottom-navigation bg-color="teal-darken-4">
+    <v-breadcrumbs :items="items">
+      <template v-slot:divider
+        ><v-icon>mdi-chevron-right</v-icon></template
+      ></v-breadcrumbs
+    >
+    <v-bottom-navigation v-model="value" :bg-color="color" mode="shift" grow>
       <v-btn>
         <v-icon>mdi-history</v-icon>
 
@@ -29,3 +33,28 @@
     </v-bottom-navigation>
   </v-layout>
 </template>
+<script>
+export default {
+  data: () => ({
+    value: 1,
+    items: ["test one", "test two", "test three"],
+  }),
+
+  computed: {
+    color() {
+      switch (this.value) {
+        case 0:
+          return "blue-grey";
+        case 1:
+          return "teal";
+        case 2:
+          return "brown";
+        case 3:
+          return "indigo";
+        default:
+          return "blue-grey";
+      }
+    },
+  },
+};
+</script>
