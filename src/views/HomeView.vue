@@ -11,7 +11,8 @@
     <!-- <ListItems /> -->
     <!-- <SheetMenu /> -->
     <!-- <ToolBar /> -->
-    <AppBar />
+    <!-- <AppBar /> -->
+    <LodingVuetify />
   </div>
 </template>
 
@@ -26,7 +27,8 @@
 // import ListItems from "@/components/ListItems.vue";
 // import SheetMenu from "@/components/SheetMenu.vue";
 // import ToolBar from "@/components/ToolBar.vue";
-import AppBar from "@/components/AppBar.vue";
+// import AppBar from "@/components/AppBar.vue";
+import LodingVuetify from "@/components/LodingVuetify.vue";
 export default {
   name: "HomeView",
   components: {
@@ -40,7 +42,8 @@ export default {
     // ListItems,
     // SheetMenu,
     // ToolBar,
-    AppBar,
+    // AppBar,
+    LodingVuetify,
   },
 };
 </script>
