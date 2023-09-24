@@ -1,12 +1,35 @@
 <template>
   <v-layout>
     <v-app-bar elevation="0" color="teal-darken-4">
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-spacer></v-spacer>
       <v-icon class="mr-4">mdi-magnify</v-icon>
       <v-icon class="mr-4">mdi-heart</v-icon>
       <v-icon>mdi-dots-vertical</v-icon>
     </v-app-bar>
+    <v-navigation-drawer temporary v-model="drawer">
+      <v-list class="text-start" nav>
+        <v-list-item
+          v-for="num in 5"
+          :key="num"
+          prepend-icon="mdi-home"
+          @click="console.log('clicked')"
+        >
+          Item {{ num }}
+        </v-list-item>
+        <v-list-group>
+          <template v-slot:activator="{ props }">
+            <v-list-item prepend-icon="mdi-account" v-bind="props">
+              <v-list-item-title>Test</v-list-item-title>
+            </v-list-item>
+          </template>
+          <v-list-item>
+            <v-list-item-title>Test 1</v-list-item-title>
+          </v-list-item>
+        </v-list-group>
+      </v-list>
+    </v-navigation-drawer>
+
     <v-app-bar color="teal-darken-4">
       <v-breadcrumbs :items="items">
         <template v-slot:divider
@@ -66,6 +89,7 @@
 export default {
   data: () => ({
     value: 1,
+    drawer: false,
     tab: null,
     items: ["test one", "test two", "test three"],
   }),
@@ -88,3 +112,12 @@ export default {
   },
 };
 </script>
+
+<style>
+.v-navigation-drawer {
+  padding: 0 !important;
+}
+.v-list-item__prepend {
+  display: block !important;
+}
+</style>
