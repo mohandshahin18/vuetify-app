@@ -49,11 +49,24 @@
       </div>
     </v-footer>
   </v-layout>
+  <v-card>
+    <v-tabs v-model="tab" stacked>
+      <v-tab v-for="num in 4" :value="num" :key="num">Item {{ num }}</v-tab>
+    </v-tabs>
+    <v-card-text>
+      <v-window v-model="tab">
+        <v-window-item v-for="num in 4" :value="num" :key="num">
+          Card {{ num }}
+        </v-window-item>
+      </v-window>
+    </v-card-text>
+  </v-card>
 </template>
 <script>
 export default {
   data: () => ({
     value: 1,
+    tab: null,
     items: ["test one", "test two", "test three"],
   }),
 
