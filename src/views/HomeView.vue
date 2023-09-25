@@ -15,7 +15,8 @@
     <!-- <LodingVuetify /> -->
     <!-- <PaginationVuetify /> -->
     <!-- <AutoComplete /> -->
-    <SelectVuetify />
+    <!-- <SelectVuetify /> -->
+    <TextFailed />
   </div>
 </template>
 
@@ -34,7 +35,8 @@
 // import LodingVuetify from "@/components/LodingVuetify.vue";
 // import PaginationVuetify from "@/components/PaginationVuetify.vue";
 // import AutoComplete from "@/components/AutoComplete.vue";
-import SelectVuetify from "@/components/SelectVuetify.vue";
+// import SelectVuetify from "@/components/SelectVuetify.vue";
+import TextFailed from "@/components/TextFailed.vue";
 export default {
   name: "HomeView",
   components: {
@@ -52,7 +54,8 @@ export default {
     // LodingVuetify,
     // PaginationVuetify,
     // AutoComplete,
-    SelectVuetify,
+    // SelectVuetify,
+    TextFailed,
   },
 };
 </script>
