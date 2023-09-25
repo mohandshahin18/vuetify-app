@@ -11,9 +11,10 @@
     <!-- <ListItems /> -->
     <!-- <SheetMenu /> -->
     <!-- <ToolBar /> -->
-    <AppBar />
+    <!-- <AppBar /> -->
     <!-- <LodingVuetify /> -->
     <!-- <PaginationVuetify /> -->
+    <AutoComplete />
   </div>
 </template>
 
@@ -28,9 +29,10 @@
 // import ListItems from "@/components/ListItems.vue";
 // import SheetMenu from "@/components/SheetMenu.vue";
 // import ToolBar from "@/components/ToolBar.vue";
-import AppBar from "@/components/AppBar.vue";
+// import AppBar from "@/components/AppBar.vue";
 // import LodingVuetify from "@/components/LodingVuetify.vue";
 // import PaginationVuetify from "@/components/PaginationVuetify.vue";
+import AutoComplete from "@/components/AutoComplete.vue";
 export default {
   name: "HomeView",
   components: {
@@ -44,9 +46,10 @@ export default {
     // ListItems,
     // SheetMenu,
     // ToolBar,
-    AppBar,
+    // AppBar,
     // LodingVuetify,
     // PaginationVuetify,
+    AutoComplete,
   },
 };
 </script>

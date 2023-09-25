@@ -1,13 +1,13 @@
 <template>
   <v-layout>
-    <v-app-bar elevation="0" color="teal-darken-4">
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-spacer></v-spacer>
-      <v-icon class="mr-4">mdi-magnify</v-icon>
-      <v-icon class="mr-4">mdi-heart</v-icon>
-      <v-icon>mdi-dots-vertical</v-icon>
-    </v-app-bar>
-    <v-navigation-drawer temporary v-model="drawer">
+    <v-navigation-drawer
+      class="px-0"
+      color="blue"
+      temporary
+      permanent
+      rail
+      expand-on-hover
+    >
       <v-list class="text-start" nav>
         <v-list-item
           v-for="num in 5"
@@ -29,6 +29,13 @@
         </v-list-group>
       </v-list>
     </v-navigation-drawer>
+    <v-app-bar elevation="0" color="teal-darken-4">
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-spacer></v-spacer>
+      <v-icon class="mr-4">mdi-magnify</v-icon>
+      <v-icon class="mr-4">mdi-heart</v-icon>
+      <v-icon>mdi-dots-vertical</v-icon>
+    </v-app-bar>
 
     <v-app-bar color="teal-darken-4">
       <v-breadcrumbs :items="items">
@@ -114,9 +121,6 @@ export default {
 </script>
 
 <style>
-.v-navigation-drawer {
-  padding: 0 !important;
-}
 .v-list-item__prepend {
   display: block !important;
 }
