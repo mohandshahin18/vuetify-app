@@ -17,6 +17,7 @@
 import { ref } from "vue";
 const search = ref("");
 const write = ref("");
+const errorMsg = ref("");
 const items = ref([
   "Ahmed",
   "Asassd",
@@ -30,7 +31,7 @@ const items = ref([
   "safa",
   "samia",
 ]);
-const errorMsg = ref("");
+
 const validation = () => {
   errorMsg.value = "";
   if (!search.value) {

@@ -14,7 +14,8 @@
     <!-- <AppBar /> -->
     <!-- <LodingVuetify /> -->
     <!-- <PaginationVuetify /> -->
-    <AutoComplete />
+    <!-- <AutoComplete /> -->
+    <SelectVuetify />
   </div>
 </template>
 
@@ -32,7 +33,8 @@
 // import AppBar from "@/components/AppBar.vue";
 // import LodingVuetify from "@/components/LodingVuetify.vue";
 // import PaginationVuetify from "@/components/PaginationVuetify.vue";
-import AutoComplete from "@/components/AutoComplete.vue";
+// import AutoComplete from "@/components/AutoComplete.vue";
+import SelectVuetify from "@/components/SelectVuetify.vue";
 export default {
   name: "HomeView",
   components: {
@@ -49,7 +51,8 @@ export default {
     // AppBar,
     // LodingVuetify,
     // PaginationVuetify,
-    AutoComplete,
+    // AutoComplete,
+    SelectVuetify,
   },
 };
 </script>
