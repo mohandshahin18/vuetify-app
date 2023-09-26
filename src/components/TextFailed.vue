@@ -44,6 +44,20 @@
           ></v-textarea>
         </v-col>
         <v-col cols="12">
+          <v-slider
+            :min="0"
+            :max="10"
+            v-model="range"
+            track-color="green"
+            thumb-color="purple"
+            append-icon="mdi-plus"
+            prepend-icon="mdi-minus"
+            thumb-label="always"
+            @click:append="range++"
+            @click:prepend="range--"
+          ></v-slider>
+        </v-col>
+        <v-col cols="12">
           <v-checkbox label="Mohanad"></v-checkbox>
           <v-radio-group>
             <v-radio label="Radio 1" value="1"></v-radio>
@@ -63,7 +77,7 @@ const myText = ref("");
 const errorMsg = ref([]);
 const img = ref([]);
 const imgUrl = ref("");
-
+const range = ref(5);
 const renderImg = () => {
   if (!img.value[0]) return;
   const file = img.value[0];
