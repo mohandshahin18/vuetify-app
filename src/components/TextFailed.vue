@@ -19,6 +19,22 @@
           ></v-text-field>
         </v-col>
         <v-col cols="12">
+          <v-file-input
+            label="Upload image"
+            class="text-start"
+            chips
+            multiple
+            show-size
+            counter
+            prepend-icon="mdi-image-outline"
+            :rules="rules"
+            v-model:model-value="img"
+            @update:model-value="renderImg"
+          ></v-file-input>
+
+          <img :src="imgUrl" width="400" alt="" />
+        </v-col>
+        <v-col cols="12">
           <v-textarea
             type="email"
             label="Bio"
@@ -45,6 +61,29 @@
 import { ref } from "vue";
 const myText = ref("");
 const errorMsg = ref([]);
+const img = ref([]);
+const imgUrl = ref("");
+
+const renderImg = () => {
+  if (!img.value[0]) return;
+  const file = img.value[0];
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.addEventListener("load", () => {
+    imgUrl.value = reader.result;
+  });
+};
+const rules = ref([
+  (value) => {
+    return (
+      !value ||
+      !value.length ||
+      value[0].size < 2000000 ||
+      "Avatar size should be less than 2 MB!"
+    );
+  },
+]);
+
 const validate = () => {
   errorMsg.value = "";
   if (!myText.value) {
