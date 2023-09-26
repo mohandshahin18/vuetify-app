@@ -1,10 +1,14 @@
 <template>
+  <v-layout>
+    <v-app-bar :theme="switchData"></v-app-bar>
+  </v-layout>
   <v-container>
     <v-card
       class="pa-5 mx-auto"
       max-width="50%"
       min-height="50vh"
       variant="outlined"
+      :theme="switchData"
     >
       <v-row>
         <v-col cols="12">
@@ -53,8 +57,8 @@
             append-icon="mdi-plus"
             prepend-icon="mdi-minus"
             thumb-label="always"
-            @click:append="range++"
-            @click:prepend="range--"
+            @click:append="increase"
+            @click:prepend="decrease"
           ></v-slider>
         </v-col>
         <v-col cols="12">
@@ -64,6 +68,15 @@
             <v-radio label="Radio 2" value="2"></v-radio>
             <v-radio label="Radio 3" value="3"></v-radio>
           </v-radio-group>
+        </v-col>
+        <v-col cols="12">
+          <v-switch
+            color="blue"
+            v-model="switchData"
+            false-value="light"
+            true-value="dark"
+            :label="`${switchData} Theme`"
+          ></v-switch>
         </v-col>
       </v-row>
       <v-btn @click="validate">Submit</v-btn>
@@ -104,6 +117,18 @@ const validate = () => {
     errorMsg.value = "Email field required";
   }
 };
+const decrease = () => {
+  if (range.value > 0) {
+    range.value--;
+  }
+};
+const increase = () => {
+  if (range.value < 10) {
+    range.value++;
+  }
+};
+
+const switchData = ref("Light");
 </script>
 
 <style lang="scss" scoped></style>
