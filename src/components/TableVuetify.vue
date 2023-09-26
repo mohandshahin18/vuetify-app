@@ -19,6 +19,33 @@
           </tr>
         </tbody>
       </v-table>
+      <v-divider class="my-10"></v-divider>
+
+      <v-card class="d-flex flex-column align-center">
+        <v-btn-toggle
+          v-model="textAligment"
+          color="blue"
+          variant="outlined"
+          divided
+          class="mr-3"
+        >
+          <v-btn value="start">
+            <v-icon>mdi-format-align-left</v-icon>
+          </v-btn>
+          <v-btn value="center">
+            <v-icon>mdi-format-align-center</v-icon>
+          </v-btn>
+          <v-btn value="end">
+            <v-icon>mdi-format-align-right</v-icon>
+          </v-btn>
+        </v-btn-toggle>
+
+        <textarea
+          :class="['w-75', 'pa-3', `text-${textAligment}`]"
+          style="border: 1px solid"
+          rows="10"
+        ></textarea>
+      </v-card>
     </v-card>
   </v-container>
 </template>
@@ -51,6 +78,7 @@ const items = ref([
     country: "Palestine",
   },
 ]);
+const textAligment = ref("start");
 </script>
 
 <style lang="scss" scoped>
