@@ -19,7 +19,8 @@
     <!-- <TextFailed /> -->
     <!-- <TableVuetify /> -->
     <!-- <CarouselVuetify /> -->
-    <SlideGroup />
+    <!-- <SlideGroup /> -->
+    <WindowVuetify />
   </div>
 </template>
 
@@ -42,7 +43,8 @@
 // import TextFailed from "@/components/TextFailed.vue";
 // import TableVuetify from "@/components/TableVuetify.vue";
 // import CarouselVuetify from "@/components/CarouselVuetify.vue";
-import SlideGroup from "@/components/SlideGroup.vue";
+// import SlideGroup from "@/components/SlideGroup.vue";
+import WindowVuetify from "@/components/WindowVuetify.vue";
 export default {
   name: "HomeView",
   components: {
@@ -64,7 +66,8 @@ export default {
     // TextFailed,
     // TableVuetify,
     // CarouselVuetify,
-    SlideGroup,
+    // SlideGroup,
+    WindowVuetify,
   },
 };
 </script>
