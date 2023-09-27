@@ -17,7 +17,8 @@
     <!-- <AutoComplete /> -->
     <!-- <SelectVuetify /> -->
     <!-- <TextFailed /> -->
-    <TableVuetify />
+    <!-- <TableVuetify /> -->
+    <CarouselVuetify />
   </div>
 </template>
 
@@ -38,7 +39,8 @@
 // import AutoComplete from "@/components/AutoComplete.vue";
 // import SelectVuetify from "@/components/SelectVuetify.vue";
 // import TextFailed from "@/components/TextFailed.vue";
-import TableVuetify from "@/components/TableVuetify.vue";
+// import TableVuetify from "@/components/TableVuetify.vue";
+import CarouselVuetify from "@/components/CarouselVuetify.vue";
 export default {
   name: "HomeView",
   components: {
@@ -58,7 +60,8 @@ export default {
     // AutoComplete,
     // SelectVuetify,
     // TextFailed,
-    TableVuetify,
+    // TableVuetify,
+    CarouselVuetify,
   },
 };
 </script>
