@@ -20,7 +20,8 @@
     <!-- <TableVuetify /> -->
     <!-- <CarouselVuetify /> -->
     <!-- <SlideGroup /> -->
-    <WindowVuetify />
+    <!-- <WindowVuetify /> -->
+    <AlertVuetify />
   </div>
 </template>
 
@@ -44,7 +45,8 @@
 // import TableVuetify from "@/components/TableVuetify.vue";
 // import CarouselVuetify from "@/components/CarouselVuetify.vue";
 // import SlideGroup from "@/components/SlideGroup.vue";
-import WindowVuetify from "@/components/WindowVuetify.vue";
+// import WindowVuetify from "@/components/WindowVuetify.vue";
+import AlertVuetify from "@/components/AlertVuetify.vue";
 export default {
   name: "HomeView",
   components: {
@@ -67,7 +69,8 @@ export default {
     // TableVuetify,
     // CarouselVuetify,
     // SlideGroup,
-    WindowVuetify,
+    // WindowVuetify,
+    AlertVuetify,
   },
 };
 </script>
